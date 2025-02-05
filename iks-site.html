@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IKS School</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+.hero {
+    background: url('IKS.png') no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -56px; /* Ajuste selon la hauteur de ta navbar */
+}
+
+
+
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .navbar-brand {
+            font-weight: bold;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+        .teacher-img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        .faq-item {
+            cursor: pointer;
+            font-weight: bold;
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+		.hero-title, .hero-text {
+    color: black;  /* Applique la couleur noire au titre et au paragraphe */
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">IKS School</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courses">Cours</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#teachers">Enseignants</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="hero">
+    <h1 class="hero-title">Bienvenue à IKS School</h1>
+    <p class="hero-text">Votre futur commence ici</p>
+    <a href="#courses" class="btn btn-primary">Voir les Cours</a>
+</header>
+
+    
+    <section id="about" class="container my-5">
+        <h2 class="text-center">À propos de nous</h2>
+        <p class="text-center">
+IKS School est une école innovante qui offre une éducation de qualité, axée sur l'acquisition de compétences modernes essentielles pour le futur. Avec des programmes diversifiés dans des domaines tels que la robotique, l'infographie, la programmation, les échecs et l'anglais, nous préparons nos étudiants à relever les défis du monde actuel. Grâce à une pédagogie interactive, des projets pratiques et des enseignants passionnés, chaque élève développe son esprit critique, sa créativité et sa capacité à résoudre des problèmes. À IKS School, nous croyons que l’apprentissage doit être un tremplin vers l’excellence et l’innovation.</p>
+    </section>
+    
+    <section id="courses" class="container my-5">
+        <h2 class="text-center">Nos Cours</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">programation</h5>
+                        <p class="card-text">Apprenez à maîtriser les langages de programmation et à résoudre des problèmes complexes en créant des applications et des solutions innovantes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">chess</h5>
+                        <p class="card-text">Développez votre stratégie et votre esprit logique en apprenant les techniques et tactiques des échecs, tout en améliorant votre capacité à anticiper chaque mouvement.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">anglais</h5>
+                        <p class="card-text">Améliorez vos compétences linguistiques en anglais, développez votre vocabulaire et perfectionnez votre expression orale et écrite pour mieux communiquer à l'international.</p>
+                    </div>
+                </div>
+            </div>
+			<div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">robotique</h5>
+                        <p class="card-text">Plongez dans le monde de la robotique et apprenez à concevoir, programmer et contrôler des robots intelligents..</p>
+                    </div>
+                </div>
+            </div>
+			<div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">infographique</h5>
+                        <p class="card-text">Découvrez l'art de la visualisation des données et apprenez à créer des infographies percutantes pour communiquer des informations complexes de manière claire et attractive.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="teachers" class="container my-5">
+        <h2 class="text-center">Nos Enseignants</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <img src="mourad.PNG" class="teacher-img" alt="Professeur">
+                <h5>Mourad</h5>
+                <p>Professeur de Programation</p>
+            </div>
+            <div class="col-md-4">
+                <img src="profile icon femme.png" class="teacher-img" alt="Professeur">
+                <h5> Jawad samadi</h5>
+                <p>Professeure de Robotique</p>
+            </div>
+            <div class="col-md-4">
+                <img src="image icon homme.jpeg" class="teacher-img" alt="Professeur">
+                <h5>Yassine</h5>
+                <p>Professeur d’anglais</p>
+            </div>
+			
+            <div class="col-md-4">
+                <img src="image icon homme.jpeg" class="teacher-img" alt="Professeur">
+                <h5>Youssef  jabri</h5>
+                <p>Professeur de programaton</p>
+            </div>
+			
+            <div class="col-md-4">
+                <img src="profile icon femme.png" class="teacher-img" alt="Professeur">
+                <h5>Najat wafi</h5>
+                <p>Professeure de programation</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="faq" class="container my-5">
+        <h2 class="text-center">FAQ</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">Quels sont les frais de scolarité ?</button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">Les frais de scolarité varient selon le programme choisi.<br>
+					<b>programation</b> a patir de 200dh/mois.<br>
+					<b>roobotique </b>a partir de  230dh/mois.<br>
+					<b>anglais</b> a partir de     250dh/mois. <br>
+					<b>chess </b>a partir de       250dh/mois.<br>
+					<b>infographie</b> a partir de 250dh/mois.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="container my-5">
+        <h2 class="text-center">Contactez-nous</h2>
+        <form>
+            <div class="mb-3">
+                <label class="form-label">Nom</label>
+                <input type="text" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 IKS School. Tous droits réservés.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
